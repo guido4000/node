@@ -52,4 +52,8 @@ Done!
 ## 6. Run the server forever
 	$ npm install forever -g
 	$ forever start -l forever.log -o out.log -e err.log server.js 
+
+Make forever start script on reboot
+	$ crontab -u root -e 
+		@reboot /usr/lib/node_modules/forever/bin/forever start /root/server.js 
 	
