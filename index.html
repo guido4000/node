@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">Guido's Tech Blog</h1>
+                <nav>
+                    <ul>
+                        <li><a href="http://www.github.com/guido4000">Github</a></li>
+                        <li><a href="http://tweets.consultingcentral.ch">Tweets</a></li>
+                        <li><a href="http://twitter.com/guidohoermann">Twitter</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+                <article>
+                    <header>
+                        <h1>How to setup a VPS node webserver in 3 minutes</h1>
+                        <p>Spin up an EC2 instance, install node, run server, get HTML5 boilerplate - done!</p>
+                    </header>
+                    <section>
+                        <h2>1. Get the server</h2>
+                        <p>Free 30 minute one click server at <a href="http://www.instantserver.io">Instantserver.io</a><br/>
+                        For a more permanent solution check out <a href="https://www.digitalocean.com">DigitalOcean.com</a></p>
+                    </section>
+                    <section>
+                        <h2>2. Install node</h2>
+                        <p>$ sudo apt-get update<br/>
+                        $ sudo apt-get install python-software-properties python g++ make<br/>
+                        optional $ sudo apt-get install software-properties-common<br/>
+                        $ sudo add-apt-repository ppa:chris-lea/node.js<br/>
+                        $ sudo apt-get update<br/>
+                        $ sudo apt-get install nodejs</p>
+                    </section>
+                    <section>
+                        <h2>3. Install connect</h2>
+                        <p>a) $ npm install connect</p>
+                        <p>b) create server.js</p>
+                        <blockquote>
+                        var connect = require('connect');<br/>
+                        connect.createServer(<br/>
+                            connect.static(__dirname)<br/>
+                        ).listen(8080);
+                        </blockquote>
+                        <p>c) run server<br/>
+                        $ node server.js</p>
+                    </section>
+                    <section>
+                        <h2>4. Get HTML5 Boilerplate</h2>
+                        <p><a href="http://www.html5boilerplate.com">HTML5 Boilerplate</a><br/>
+                            Extract and copy all files to the server</p>
+                    </section>
+                    <section>
+                        <h2>5. Open website in Browser on port 8080</h2>
+                        <p>Done!</p>
+                    </section>
+                    <footer>
+                        <h3></h3>
+                        <p></p>
+                    </footer>
+                </article>
+
+                <aside>
+                    <h3>Shortcuts</h3>
+                    <p>
+                        <a href="http://www.instantserver.io">Instantserver.io</a><br/>
+                        <a href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#ubuntu-mint">Node installation Ubuntu</a><br/>
+                        <a href="http://stackoverflow.com/questions/6084360/node-js-as-a-simple-web-server">Connect HTTP server for node</a><br/>
+                        <a href="http://www.html5boilerplate.com">HTML5 Boilerplate</a></p>
+                    <h3>Other personal projects</h3>
+                    <p>
+                        <a href="#">meteor tweetfinder</a><br/>
+                        <a href="#">meteor CRUD app</a><br/>
+                        <a href="#">train delay check</a><br/>
+                        <a href="#">transformation scripts</a></p>
+                    <h3>Cool Tools</h3>
+                    <p>
+                        <a href="#">Meteor.js</a><br/>
+                        <a href="#">Hoodie.js</a><br/>
+                        <a href="#">Node.js and Connect</a><br/>
+                        <a href="#">Angular.js</a><br/>
+                        <a href="http://developer.chrome.com/apps">Chrome Apps</a><br/>
+                        <a href="#">Github.com</a><br/>
+                        <a href="#">Bitbucket.com</a><br/>
+                        <a href="#">Stackoverflow.com</a><br/>
+                        <a href="#">DigitalOcean.com</a><br/>
+                        <a href="#">Ghandi.io</a><br/>
+                        <a href="#">Cloudflare.com</a></p>
+                </aside>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>&#169; 2013</h3>
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
