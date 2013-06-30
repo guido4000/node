@@ -48,3 +48,8 @@ Download boilerplate and copy to server
 Open up the server IP in the browser on port 8080
 
 Done!
+
+## 6. Run the server forever
+	$ npm install forever -g
+	$ forever start -l forever.log -o out.log -e err.log server.js 
+	
