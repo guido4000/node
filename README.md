@@ -6,14 +6,16 @@ node
 
 # Get EC2 instance with one click
 
-http://instantserver.io/
+Free 30 minute one click server at http://www.instantserver.io
+                        
+For a more permanent solution check out https://www.digitalocean.com
 
 # Install node for ubuntu
 https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#ubuntu-mint
 
 sudo apt-get update
 sudo apt-get install python-software-properties python g++ make
-
+optional $ sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update
 sudo apt-get install nodejs
@@ -40,4 +42,5 @@ Download boilerplate and copy to server
 
 # Open Website
 Type in the instantserver IP in the browser
+
 Done!
