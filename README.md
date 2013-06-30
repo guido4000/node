@@ -13,7 +13,7 @@ For a more permanent solution check out https://www.digitalocean.com
 # 2. Install node for ubuntu
 https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager#ubuntu-mint
 
-```sudo apt-get update
+``sudo apt-get update
 sudo apt-get install python-software-properties python g++ make
 optional $ sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:chris-lea/node.js
@@ -25,7 +25,7 @@ sudo apt-get install nodejs
 http://stackoverflow.com/questions/6084360/node-js-as-a-simple-web-server
 
 a) Install connect with NPM
-``npm install connect
+```npm install connect```
 
 b) Create server.js file with this content:
 ```var connect = require('connect');
@@ -35,7 +35,7 @@ connect.createServer(
 ```
 
 c) Run with NodeJS
-``node server.js
+```node server.js```
 
 # 4. Copy HTML5 Boilerplate
 http://html5boilerplate.com/
